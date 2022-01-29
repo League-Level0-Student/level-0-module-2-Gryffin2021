@@ -13,7 +13,9 @@ public class Validation {
 		Random randomMaker = new Random();
 		
 		int randomNumber = randomMaker.nextInt(5);
-		
+		for (int i=0; i<4; i++) {
+    		randomNumber = randomMaker.nextInt(4 - 0 + 1) + 0;
+    	}
 		System.out.println(randomNumber);
 
 		// 1. Use each value of randomNumber to give the user a random compliment.
